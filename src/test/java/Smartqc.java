@@ -1,11 +1,19 @@
-import org.openqa.selenium.*;
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.*;
-
-import java.time.Duration;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class Smartqc {
     private WebDriver driver;
@@ -13,7 +21,7 @@ public class Smartqc {
     @BeforeClass
     public void setUp() {
         // Set the path to the chromedriver executable
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\A-00714\\Desktop\\workspace\\untitled\\src\\test\\resources\\chromedriver.exe");
+        System.setProperty("web driver.chrome.driver", "C:\\Users\\A-00714\\Desktop\\workspace\\untitled\\src\\test\\resources\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         System.out.println("Setup completed.");
@@ -22,10 +30,10 @@ public class Smartqc {
 
     @BeforeMethod
     public void testLoginOrSignUp() throws InterruptedException {
-        driver.get("https://smartqc.io/login");
+        driver.get("https://stage.smartqc.io/");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement loginPage = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='root']/div[1]/div/div/div/div/form")));
+        WebElement loginPage = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='card-body p-5']")));
 
         // Check if login form is present
         if (loginPage != null) {
@@ -38,7 +46,7 @@ public class Smartqc {
             // Enter credentials
             usernameField.sendKeys("abamne@smartqc.io");
             Thread.sleep(2000);
-            passwordField.sendKeys("Aqdas@123");
+            passwordField.sendKeys("Alltake@123");
 
             // Click the login button
             loginButton.click();
@@ -94,7 +102,7 @@ public class Smartqc {
                 }
             }
         }
-//        shouldLogout = true; // Set the flag to true after Subscribers test
+    //  shouldLogout = true; // Set the flag to true after Subscribers test
 
     }
 
@@ -370,11 +378,11 @@ public class Smartqc {
         Thread.sleep(2000); // Adjust the sleep time if necessary
 
         WebElement newPassword = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='New Password']")));
-        newPassword.sendKeys("Aqdas@123");
+        newPassword.sendKeys("Alltake@123");
         Thread.sleep(2000); // Adjust the sleep time if necessary
 
         WebElement confirmPassword = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Confirm New Password']")));
-        confirmPassword.sendKeys("Aqdas@123");
+        confirmPassword.sendKeys("Alltake@123");
         Thread.sleep(2000); // Adjust the sleep time if necessary
         // Scroll to the Reset Button
         JavascriptExecutor js = (JavascriptExecutor) driver;
