@@ -154,7 +154,7 @@ public class Smartqc {
         } else {
             // Alternative action if "Get Started" button is not displayed
             WebElement alternativeButton = driver.findElement(By.xpath("//*[@id='root']/div[1]/div/div[1]/div[2]/button"));
-            alternativeButton.click();
+            alternativeButton.click(); 
             Thread.sleep(2000);
 
             WebElement getPlaceHolder = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='root']/div[1]/div/div[2]/div/input")));
