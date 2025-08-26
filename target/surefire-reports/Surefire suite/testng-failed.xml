@@ -6,10 +6,10 @@
       <class name="Smartqc">
         <methods>
           <include name="setUp"/>
-          <include name="testLoginOrSignUp"/>
           <include name="tearDown"/>
+          <include name="loginOrSignUp"/>
           <include name="logout"/>
-          <include name="testGetStarted"/>
+          <include name="testCreateCampaign"/>
         </methods>
       </class> <!-- Smartqc -->
     </classes>

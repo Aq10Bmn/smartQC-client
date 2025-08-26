@@ -1,0 +1,80 @@
+Aug 22, 2025 12:16:58 AM Smartqc setupLogger
+INFO: Logger initialized successfully.
+Aug 22, 2025 12:16:58 AM Smartqc setUp
+INFO: Setting up WebDriver...
+Aug 22, 2025 12:17:03 AM Smartqc setUp
+INFO: Setup completed successfully.
+Aug 22, 2025 12:17:03 AM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Aug 22, 2025 12:17:09 AM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Aug 22, 2025 12:17:09 AM Smartqc attemptLogin
+FINE: Clearing and entering username
+Aug 22, 2025 12:17:09 AM Smartqc attemptLogin
+FINE: Clearing and entering password
+Aug 22, 2025 12:17:10 AM Smartqc attemptLogin
+FINE: Clicking login button
+Aug 22, 2025 12:17:10 AM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Aug 22, 2025 12:17:12 AM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Aug 22, 2025 12:17:12 AM Smartqc loginOrSignUp
+INFO: Login successful
+Aug 22, 2025 12:17:22 AM Smartqc testCreateCampaign
+INFO: Testing campaign creation...
+Aug 22, 2025 12:17:22 AM Smartqc findGetStartedButton
+FINE: Searching for Get Started button
+Aug 22, 2025 12:17:22 AM Smartqc findGetStartedButton
+FINE: Trying to find Get Started button with XPath: //*[@id='root']/div[1]/div/div[2]/div/div/div/div/button
+Aug 22, 2025 12:17:42 AM Smartqc findGetStartedButton
+FINE: Button not found with XPath: //*[@id='root']/div[1]/div/div[2]/div/div/div/div/button - Expected condition failed: Get Started button not found with XPath: //*[@id='root']/div[1]/div/div[2]/div/div/div/div/button (tried for 20 second(s) with 500 milliseconds interval)
+Aug 22, 2025 12:17:42 AM Smartqc findGetStartedButton
+FINE: Trying to find Get Started button with XPath: //button[contains(text(), 'Get Started')]
+Aug 22, 2025 12:18:02 AM Smartqc findGetStartedButton
+FINE: Button not found with XPath: //button[contains(text(), 'Get Started')] - Expected condition failed: Get Started button not found with XPath: //button[contains(text(), 'Get Started')] (tried for 20 second(s) with 500 milliseconds interval)
+Aug 22, 2025 12:18:02 AM Smartqc findGetStartedButton
+FINE: Trying to find Get Started button with XPath: //button[normalize-space()='Get Started']
+Aug 22, 2025 12:18:23 AM Smartqc findGetStartedButton
+FINE: Button not found with XPath: //button[normalize-space()='Get Started'] - Expected condition failed: Get Started button not found with XPath: //button[normalize-space()='Get Started'] (tried for 20 second(s) with 500 milliseconds interval)
+Aug 22, 2025 12:18:23 AM Smartqc findGetStartedButton
+FINE: Trying to find Get Started button with XPath: //div[contains(@class, 'dashboard')]//button
+Aug 22, 2025 12:18:23 AM Smartqc findGetStartedButton
+INFO: Get Started button found with XPath: //div[contains(@class, 'dashboard')]//button
+Aug 22, 2025 12:18:23 AM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\dashboard-before-campaign-creation-20250822-001823.png
+Aug 22, 2025 12:18:23 AM Smartqc testCreateCampaign
+INFO: Using primary campaign flow
+Aug 22, 2025 12:18:23 AM Smartqc handlePrimaryCampaignFlow
+INFO: Starting primary campaign creation flow
+Aug 22, 2025 12:18:23 AM Smartqc handlePrimaryCampaignFlow
+FINE: Ensuring Get Started button is clickable
+Aug 22, 2025 12:18:24 AM Smartqc handlePrimaryCampaignFlow
+FINE: Waiting for campaign creation page to load
+Aug 22, 2025 12:18:32 AM Smartqc handlePrimaryCampaignFlow
+WARNING: Did not navigate after clicking Get Started; navigating directly to creation page
+Aug 22, 2025 12:18:35 AM Smartqc handlePrimaryCampaignFlow
+INFO: Current URL: https://smartqc.io/account/createcampaign
+Aug 22, 2025 12:18:36 AM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\before-campaign-details-20250822-001835.png
+Aug 22, 2025 12:18:56 AM Smartqc handlePrimaryCampaignFlow
+SEVERE: Error in primary campaign flow: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='root']/div[1]/div/div[2]/div/input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\A-00714\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64356}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64356/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9eb7c19d5ff3fd6df5c212072201f9b7
+Aug 22, 2025 12:18:56 AM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\primary-campaign-flow-error-20250822-001856.png
+Aug 22, 2025 12:18:56 AM Smartqc testCreateCampaign
+SEVERE: Timeout during campaign creation: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='root']/div[1]/div/div[2]/div/input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\A-00714\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64356}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64356/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9eb7c19d5ff3fd6df5c212072201f9b7
+Aug 22, 2025 12:18:56 AM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\campaign-creation-timeout-error-20250822-001856.png
+Aug 22, 2025 12:19:17 AM Smartqc tearDown
+INFO: Tearing down WebDriver and cleaning up resources...
+Aug 22, 2025 12:19:18 AM Smartqc tearDown
+INFO: WebDriver closed successfully

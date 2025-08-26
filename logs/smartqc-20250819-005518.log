@@ -1,0 +1,208 @@
+Aug 19, 2025 12:55:18 AM Smartqc setupLogger
+INFO: Logger initialized successfully.
+Aug 19, 2025 12:55:18 AM Smartqc setUp
+INFO: Setting up WebDriver...
+Aug 19, 2025 12:55:18 AM Smartqc createScreenshotDirectory
+INFO: Created screenshots directory: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots
+Aug 19, 2025 12:55:21 AM Smartqc setUp
+INFO: Setup completed successfully.
+Aug 19, 2025 12:55:21 AM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Aug 19, 2025 12:55:25 AM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Aug 19, 2025 12:55:25 AM Smartqc attemptLogin
+FINE: Clearing and entering username
+Aug 19, 2025 12:55:25 AM Smartqc attemptLogin
+FINE: Clearing and entering password
+Aug 19, 2025 12:55:26 AM Smartqc attemptLogin
+FINE: Clicking login button
+Aug 19, 2025 12:55:26 AM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Aug 19, 2025 12:55:28 AM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Aug 19, 2025 12:55:28 AM Smartqc loginOrSignUp
+INFO: Login successful
+Aug 19, 2025 12:55:50 AM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Aug 19, 2025 12:55:50 AM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Aug 19, 2025 12:55:50 AM Smartqc attemptLogin
+FINE: Clearing and entering username
+Aug 19, 2025 12:55:51 AM Smartqc attemptLogin
+FINE: Clearing and entering password
+Aug 19, 2025 12:55:51 AM Smartqc attemptLogin
+FINE: Clicking login button
+Aug 19, 2025 12:55:51 AM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Aug 19, 2025 12:55:52 AM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Aug 19, 2025 12:55:52 AM Smartqc loginOrSignUp
+INFO: Login successful
+Aug 19, 2025 12:56:14 AM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Aug 19, 2025 12:56:14 AM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Aug 19, 2025 12:56:14 AM Smartqc attemptLogin
+FINE: Clearing and entering username
+Aug 19, 2025 12:56:14 AM Smartqc attemptLogin
+FINE: Clearing and entering password
+Aug 19, 2025 12:56:14 AM Smartqc attemptLogin
+FINE: Clicking login button
+Aug 19, 2025 12:56:15 AM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Aug 19, 2025 12:56:16 AM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Aug 19, 2025 12:56:16 AM Smartqc loginOrSignUp
+INFO: Login successful
+Aug 19, 2025 12:56:38 AM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Aug 19, 2025 12:56:39 AM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Aug 19, 2025 12:56:39 AM Smartqc attemptLogin
+FINE: Clearing and entering username
+Aug 19, 2025 12:56:39 AM Smartqc attemptLogin
+FINE: Clearing and entering password
+Aug 19, 2025 12:56:39 AM Smartqc attemptLogin
+FINE: Clicking login button
+Aug 19, 2025 12:56:39 AM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Aug 19, 2025 12:56:41 AM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Aug 19, 2025 12:56:41 AM Smartqc loginOrSignUp
+INFO: Login successful
+Aug 19, 2025 12:57:01 AM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Aug 19, 2025 12:57:02 AM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Aug 19, 2025 12:57:02 AM Smartqc attemptLogin
+FINE: Clearing and entering username
+Aug 19, 2025 12:57:02 AM Smartqc attemptLogin
+FINE: Clearing and entering password
+Aug 19, 2025 12:57:02 AM Smartqc attemptLogin
+FINE: Clicking login button
+Aug 19, 2025 12:57:02 AM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Aug 19, 2025 12:57:04 AM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Aug 19, 2025 12:57:04 AM Smartqc loginOrSignUp
+INFO: Login successful
+Aug 19, 2025 12:58:05 AM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Aug 19, 2025 12:58:06 AM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Aug 19, 2025 12:58:06 AM Smartqc attemptLogin
+FINE: Clearing and entering username
+Aug 19, 2025 12:58:06 AM Smartqc attemptLogin
+FINE: Clearing and entering password
+Aug 19, 2025 12:58:06 AM Smartqc attemptLogin
+FINE: Clicking login button
+Aug 19, 2025 12:58:06 AM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Aug 19, 2025 12:58:08 AM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Aug 19, 2025 12:58:08 AM Smartqc loginOrSignUp
+INFO: Login successful
+Aug 19, 2025 12:58:30 AM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Aug 19, 2025 12:58:30 AM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Aug 19, 2025 12:58:30 AM Smartqc attemptLogin
+FINE: Clearing and entering username
+Aug 19, 2025 12:58:30 AM Smartqc attemptLogin
+FINE: Clearing and entering password
+Aug 19, 2025 12:58:31 AM Smartqc attemptLogin
+FINE: Clicking login button
+Aug 19, 2025 12:58:31 AM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Aug 19, 2025 12:58:32 AM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Aug 19, 2025 12:58:32 AM Smartqc loginOrSignUp
+INFO: Login successful
+Aug 19, 2025 12:58:54 AM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Aug 19, 2025 12:58:55 AM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Aug 19, 2025 12:58:55 AM Smartqc attemptLogin
+FINE: Clearing and entering username
+Aug 19, 2025 12:58:55 AM Smartqc attemptLogin
+FINE: Clearing and entering password
+Aug 19, 2025 12:58:55 AM Smartqc attemptLogin
+FINE: Clicking login button
+Aug 19, 2025 12:58:55 AM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Aug 19, 2025 12:58:57 AM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Aug 19, 2025 12:58:57 AM Smartqc loginOrSignUp
+INFO: Login successful
+Aug 19, 2025 12:59:18 AM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Aug 19, 2025 12:59:19 AM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Aug 19, 2025 12:59:19 AM Smartqc attemptLogin
+FINE: Clearing and entering username
+Aug 19, 2025 12:59:19 AM Smartqc attemptLogin
+FINE: Clearing and entering password
+Aug 19, 2025 12:59:19 AM Smartqc attemptLogin
+FINE: Clicking login button
+Aug 19, 2025 12:59:19 AM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Aug 19, 2025 12:59:21 AM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Aug 19, 2025 12:59:21 AM Smartqc loginOrSignUp
+INFO: Login successful
+Aug 19, 2025 12:59:43 AM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Aug 19, 2025 12:59:44 AM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Aug 19, 2025 12:59:44 AM Smartqc attemptLogin
+FINE: Clearing and entering username
+Aug 19, 2025 12:59:44 AM Smartqc attemptLogin
+FINE: Clearing and entering password
+Aug 19, 2025 12:59:44 AM Smartqc attemptLogin
+FINE: Clicking login button
+Aug 19, 2025 12:59:44 AM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Aug 19, 2025 12:59:46 AM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Aug 19, 2025 12:59:46 AM Smartqc loginOrSignUp
+INFO: Login successful
+Aug 19, 2025 1:00:08 AM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Aug 19, 2025 1:00:08 AM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Aug 19, 2025 1:00:08 AM Smartqc attemptLogin
+FINE: Clearing and entering username
+Aug 19, 2025 1:00:08 AM Smartqc attemptLogin
+FINE: Clearing and entering password
+Aug 19, 2025 1:00:08 AM Smartqc attemptLogin
+FINE: Clicking login button
+Aug 19, 2025 1:00:08 AM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Aug 19, 2025 1:00:10 AM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Aug 19, 2025 1:00:10 AM Smartqc loginOrSignUp
+INFO: Login successful
+Aug 19, 2025 1:00:10 AM Smartqc testCreateCampaign
+INFO: Testing campaign creation...
+Aug 19, 2025 1:00:10 AM Smartqc findGetStartedButton
+FINE: Searching for Get Started button
+Aug 19, 2025 1:00:10 AM Smartqc findGetStartedButton
+FINE: Trying to find Get Started button with XPath: //*[@id='root']/div[1]/div/div[2]/div/div/div/div/button
+Aug 19, 2025 1:00:20 AM Smartqc findGetStartedButton
+FINE: Button not found with XPath: //*[@id='root']/div[1]/div/div[2]/div/div/div/div/button - Expected condition failed: Get Started button not found with XPath: //*[@id='root']/div[1]/div/div[2]/div/div/div/div/button (tried for 10 second(s) with 500 milliseconds interval)
+Aug 19, 2025 1:00:20 AM Smartqc findGetStartedButton
+FINE: Trying to find Get Started button with XPath: //button[contains(text(), 'Get Started')]
+Aug 19, 2025 1:00:30 AM Smartqc findGetStartedButton
+FINE: Button not found with XPath: //button[contains(text(), 'Get Started')] - Expected condition failed: Get Started button not found with XPath: //button[contains(text(), 'Get Started')] (tried for 10 second(s) with 500 milliseconds interval)
+Aug 19, 2025 1:00:30 AM Smartqc findGetStartedButton
+FINE: Trying to find Get Started button with XPath: //button[normalize-space()='Get Started']
+Aug 19, 2025 1:00:41 AM Smartqc findGetStartedButton
+FINE: Button not found with XPath: //button[normalize-space()='Get Started'] - Expected condition failed: Get Started button not found with XPath: //button[normalize-space()='Get Started'] (tried for 10 second(s) with 500 milliseconds interval)
+Aug 19, 2025 1:00:41 AM Smartqc findGetStartedButton
+FINE: Trying to find Get Started button with XPath: //div[contains(@class, 'dashboard')]//button
+Aug 19, 2025 1:00:41 AM Smartqc findGetStartedButton
+INFO: Get Started button found with XPath: //div[contains(@class, 'dashboard')]//button
+Aug 19, 2025 1:00:41 AM Smartqc tearDown
+INFO: Tearing down WebDriver and cleaning up resources...
+Aug 19, 2025 1:00:41 AM Smartqc tearDown
+INFO: WebDriver closed successfully

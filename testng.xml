@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SmartQC Test Suite">
+    <listeners>
+        <listener class-name="SmartqcTestListener" />
+    </listeners>
+    
+    <test name="SmartQC Functional Tests">
+        <classes>
+            <class name="Smartqc">
+                <methods>
+                    <!-- Login/Authentication Tests -->
+                    <include name="testCreateCampaign" />
+                    <include name="testFileImport" />
+                    <include name="testCampaignSearch" />
+                    
+                    <!-- Billing Tests -->
+                    <include name="testBillingNavigation" />
+                    <include name="testAdvancedPlanActivation" />
+                    <include name="testProfessionalPlanActivation" />
+                    <include name="testStarterPlanActivation" />
+                    <include name="testInvoiceHistory" />
+                    
+                    <!-- User Profile Tests -->
+                    <include name="testSettingsNavigation" />
+                    <include name="testNameChange" />
+                    <include name="testPasswordChange" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

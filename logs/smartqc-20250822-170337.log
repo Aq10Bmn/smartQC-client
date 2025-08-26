@@ -1,0 +1,60 @@
+Aug 22, 2025 5:03:37 PM Smartqc setupLogger
+INFO: Logger initialized successfully.
+Aug 22, 2025 5:03:37 PM Smartqc setUp
+INFO: Setting up WebDriver...
+Aug 22, 2025 5:03:44 PM Smartqc setUp
+INFO: Setup completed successfully.
+Aug 22, 2025 5:03:44 PM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Aug 22, 2025 5:03:50 PM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Aug 22, 2025 5:03:50 PM Smartqc attemptLogin
+FINE: Clearing and entering username
+Aug 22, 2025 5:03:50 PM Smartqc attemptLogin
+FINE: Clearing and entering password
+Aug 22, 2025 5:03:51 PM Smartqc attemptLogin
+FINE: Clicking login button
+Aug 22, 2025 5:03:51 PM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Aug 22, 2025 5:03:53 PM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Aug 22, 2025 5:03:53 PM Smartqc loginOrSignUp
+INFO: Login successful
+Aug 22, 2025 5:03:53 PM Smartqc testCreateCampaign
+INFO: Testing campaign creation...
+Aug 22, 2025 5:03:54 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\dashboard-before-campaign-creation-20250822-170353.png
+Aug 22, 2025 5:03:54 PM Smartqc testCreateCampaign
+INFO: Using primary campaign flow
+Aug 22, 2025 5:03:54 PM Smartqc handlePrimaryCampaignFlow
+INFO: Starting primary campaign creation flow
+Aug 22, 2025 5:03:54 PM Smartqc handlePrimaryCampaignFlow
+FINE: Ensuring Get Started button is clickable
+Aug 22, 2025 5:03:55 PM Smartqc handlePrimaryCampaignFlow
+FINE: Waiting for campaign creation page to load
+Aug 22, 2025 5:03:55 PM Smartqc handlePrimaryCampaignFlow
+INFO: Current URL: https://smartqc.io/account/createcampaign
+Aug 22, 2025 5:03:55 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\before-campaign-details-20250822-170355.png
+Aug 22, 2025 5:04:16 PM Smartqc handlePrimaryCampaignFlow
+SEVERE: Error in primary campaign flow: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='root']/div[1]/div/div[2]/div/input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\A-00714\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65123/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 689e3580489a8133760312e0763db180
+Aug 22, 2025 5:04:16 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\primary-campaign-flow-error-20250822-170416.png
+Aug 22, 2025 5:04:16 PM Smartqc testCreateCampaign
+SEVERE: Timeout during campaign creation: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='root']/div[1]/div/div[2]/div/input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\A-00714\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65123/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 689e3580489a8133760312e0763db180
+Aug 22, 2025 5:04:16 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\campaign-creation-timeout-error-20250822-170416.png
+Aug 22, 2025 5:04:37 PM Smartqc tearDown
+INFO: Tearing down WebDriver and cleaning up resources...
+Aug 22, 2025 5:04:37 PM Smartqc tearDown
+INFO: WebDriver closed successfully
