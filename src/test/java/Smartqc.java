@@ -409,224 +409,124 @@ public class Smartqc {
      * Verifies that a user can successfully create a new campaign
      */
     @Test(description = "Create a new campaign", priority = 1)
-    public void testCreateCampaign() {
-        logger.info("Testing campaign creation...");
-        Reporter.log("Testing campaign creation...", true);
-        
-        try {
-            // Wait for dashboard to fully load
-            waitForPageToLoad();
-            
-            // Try to find the "New Campaign" button directly (non-fatal if not present)
-            WebElement getStartedButton = null;
-            try {
-                getStartedButton = new WebDriverWait(driver, Duration.ofSeconds(5))
-                    .until(ExpectedConditions.elementToBeClickable(
-                        By.xpath("//button[normalize-space()='New Campaign']")));
-            } catch (Exception ignored) { }
-            
-            // Take screenshot of dashboard before proceeding
-            captureScreenshot("dashboard-before-campaign-creation");
-            
-            // Handle appropriate campaign flow based on UI state
-            if (getStartedButton != null && getStartedButton.isDisplayed()) {
-                logger.info("Using primary campaign flow");
-                Reporter.log("Using primary campaign flow", true);
-                handlePrimaryCampaignFlow(getStartedButton);
+public void testCreateCampaign() {
+    logger.info("Testing campaign creation...");
+    Reporter.log("Testing campaign creation...", true);
 
-                // Fallback: If still on dashboard after clicking, navigate directly to campaign creation page
-                if (driver.getCurrentUrl().equals(DASHBOARD_URL)) {
-                    logger.warning("Still on dashboard after clicking Get Started, navigating directly to campaign creation page.");
-                    Reporter.log("Still on dashboard after clicking Get Started, navigating directly to campaign creation page.", true);
-                    driver.get(CREATE_CAMPAIGN_URL);
-                    // Wait for campaign creation page to load
-                    waitForPageToLoad();
-                    // Optionally, verify the URL
-                    if (!driver.getCurrentUrl().equals(CREATE_CAMPAIGN_URL)) {
-                        String currentUrl = driver.getCurrentUrl();
-                        logger.log(Level.WARNING, "Direct navigation to campaign creation page failed, current URL: {0}", currentUrl);
-                        Reporter.log("Direct navigation to campaign creation page failed, current URL: " + currentUrl, true);
-                        captureScreenshot("campaign-direct-navigation-failed");
-                        Assert.fail("Failed to navigate to campaign creation page after fallback.");
-                    }
-                }
-            } else {
-                logger.info("Using alternative campaign flow");
-                Reporter.log("Using alternative campaign flow", true);
-                handleAlternativeCampaignFlow();
-            }
-            
-            // Take screenshot after campaign creation
-            captureScreenshot("campaign-creation-complete");
-            
-            // Mark test as requiring logout
-            shouldLogout = true;
-            
-            // Log success
-            logger.info("Campaign creation test completed successfully");
-            Reporter.log("Campaign creation test completed successfully", true);
-            
-        } catch (TimeoutException e) {
-            logger.severe("Timeout during campaign creation: " + e.getMessage());
-            Reporter.log("Timeout during campaign creation: " + e.getMessage(), true);
-            captureScreenshot("campaign-creation-timeout-error");
-            Assert.fail("Campaign creation failed due to timeout: " + e.getMessage());
-        } catch (NoSuchElementException e) {
-            logger.severe("Element not found during campaign creation: " + e.getMessage());
-            Reporter.log("Element not found during campaign creation: " + e.getMessage(), true);
-            captureScreenshot("campaign-creation-element-not-found");
-            Assert.fail("Campaign creation failed - element not found: " + e.getMessage());
-        } catch (WebDriverException e) {
-            logger.severe("WebDriver error during campaign creation: " + e.getMessage());
-            Reporter.log("WebDriver error during campaign creation: " + e.getMessage(), true);
-            captureScreenshot("campaign-creation-webdriver-error");
-            Assert.fail("Campaign creation failed due to WebDriver error: " + e.getMessage());
-        } catch (Exception e) {
-            logger.severe("Unexpected error during campaign creation: " + e.getMessage());
-            Reporter.log("Unexpected error during campaign creation: " + e.getMessage(), true);
-            captureScreenshot("campaign-creation-unexpected-error");
-            Assert.fail("Campaign creation failed due to unexpected error: " + e.getMessage());
+    try {
+        // Wait for dashboard to fully load
+        waitForPageToLoad();
+
+        // Navigate to Campaigns page and click "New Campaign"
+        driver.get(createCampaignUrl);
+        waitForPageToLoad();
+        waitForSpinnerToDisappear();
+
+        WebElement newCampaignBtn = wait.until(ExpectedConditions.elementToBeClickable(
+            By.xpath("//button[normalize-space()='New Campaign']")));
+        scrollToElement(newCampaignBtn);
+        newCampaignBtn.click();
+
+        waitForPageToLoad();
+        waitForSpinnerToDisappear();
+
+        // Verify navigation
+        String currentUrl = driver.getCurrentUrl();
+        if (!currentUrl.equals(CREATE_CAMPAIGN_URL) && !currentUrl.contains("/createcampaign")) {
+            captureScreenshot("campaign-url-mismatch");
+            Assert.fail("Failed to navigate to campaign creation page. Current: " + currentUrl);
         }
-    }
-    
 
-    
-    /**
-     * Handles the primary campaign creation flow
-     * 
-     * @param getStartedButton The Get Started button WebElement
-     */
-    private void handlePrimaryCampaignFlow(WebElement getStartedButton) {
-        try {
-            logger.info("Starting primary campaign creation flow");
-            Reporter.log("Starting primary campaign creation flow", true);
+        // Take screenshot before filling details
+        captureScreenshot("before-campaign-details");
 
-            // Ensure spinner/overlay is gone before interacting
-            waitForSpinnerToDisappear();
-            
-            // Ensure button is clickable and visible, then click with fallback
-            logger.fine("Ensuring Get Started button is clickable");
-            try {
-                wait.until(ExpectedConditions.elementToBeClickable(getStartedButton));
-            } catch (Exception ignore) { }
-            scrollToElement(getStartedButton);
-            try {
-                getStartedButton.click();
-            } catch (Exception clickEx) {
-                logger.fine("Normal click failed, retrying with JS click");
-                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", getStartedButton);
-            }
-
-            // Wait for any spinner that may appear after clicking
-            waitForSpinnerToDisappear();
-
-            // Wait for navigation; if it doesn't happen, try direct navigation
-            logger.fine("Waiting for campaign creation page to load");
-            boolean navigated = false;
-            try {
-                navigated = new WebDriverWait(driver, Duration.ofSeconds(8))
-                        .until(ExpectedConditions.or(
-                                ExpectedConditions.urlToBe(CREATE_CAMPAIGN_URL),
-                                ExpectedConditions.urlContains("/createcampaign")
-                        ));
-            } catch (Exception ignored) {
-                // ignored; we'll fallback
-            }
-
-            if (!navigated) {
-                logger.warning("Did not navigate after clicking Get Started; navigating directly to creation page");
-                driver.get(CREATE_CAMPAIGN_URL);
-                waitForPageToLoad();
-                waitForSpinnerToDisappear();
-            }
-
-            String currentUrl = driver.getCurrentUrl();
-            logger.info("Current URL: " + currentUrl);
-            Reporter.log("Current URL: " + currentUrl, true);
-
-            if (!currentUrl.equals(CREATE_CAMPAIGN_URL) && !currentUrl.contains("/createcampaign")) {
-                captureScreenshot("campaign-url-mismatch");
-                Assert.fail("Failed to navigate to campaign creation page. Current: " + currentUrl);
-            }
-            
-            // Take screenshot before filling details
-            captureScreenshot("before-campaign-details");
-            
-            // Fill in campaign details
-            fillCampaignDetails();
-            
-            // Take screenshot after filling details
-            captureScreenshot("after-campaign-details");
-            
-            // Find and click continue button
-            logger.fine("Looking for continue button");
-            WebElement continueButton = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("//*[@id=\"root\"]/div[1]/div/div[2]/div/button")));
-            
-            // Scroll to make button visible
-            logger.fine("Scrolling to continue button");
-            scrollToElement(continueButton);
-            
-            // Click first continue
-            logger.fine("Clicking continue button (first time)");
-            continueButton.click();
-            
-            // Wait for button to be clickable again
-            logger.fine("Waiting for continue button to be clickable again");
-            wait.until(ExpectedConditions.elementToBeClickable(continueButton));
-            
-            // Take screenshot before second click
-            captureScreenshot("before-second-continue");
-            
-            // Click second continue
-            logger.fine("Clicking continue button (second time)");
-            continueButton.click();
-            
-            // Take screenshot after completion
-            captureScreenshot("campaign-flow-complete");
-            
-            logger.info("Primary campaign creation flow completed successfully");
-            Reporter.log("Primary campaign creation flow completed successfully", true);
-            
-        } catch (Exception e) {
-            logger.severe("Error in primary campaign flow: " + e.getMessage());
-            Reporter.log("Error in primary campaign flow: " + e.getMessage(), true);
-            captureScreenshot("primary-campaign-flow-error");
-            throw e; // Re-throw to be handled by the calling method
-        }
-    }
-    
-    /**
-     * Handles the alternative campaign creation flow
-     */
-    private void handleAlternativeCampaignFlow() {
-        WebElement alternativeButton = driver.findElement(
-            By.xpath("//*[@id='root']/div[1]/div/div[1]/div[2]/button"));
-        alternativeButton.click();
-        
+        // Fill in campaign details
         fillCampaignDetails();
-        
+
+        // Take screenshot after filling details
+        captureScreenshot("after-campaign-details");
+
+        // Find and click continue button
         WebElement continueButton = wait.until(ExpectedConditions.visibilityOfElementLocated(
-            By.xpath("//button[normalize-space()='Continue']")));
+            By.xpath("//*[@id=\"root\"]/div[1]/div/div[2]/div/button")));
+
         scrollToElement(continueButton);
+
+        // Click first continue
         continueButton.click();
-        
-        System.out.println("Alternative campaign creation flow completed.");
+
+        // Wait for button to be clickable again
+        wait.until(ExpectedConditions.elementToBeClickable(continueButton));
+
+        captureScreenshot("before-second-continue");
+
+        // Click second continue
+        continueButton.click();
+
+        // Take screenshot after completion
+        captureScreenshot("campaign-flow-complete");
+
+        shouldLogout = true;
+        logger.info("Campaign creation test completed successfully");
+        Reporter.log("Campaign creation test completed successfully", true);
+
+    } catch (TimeoutException e) {
+        logger.severe("Timeout during campaign creation: " + e.getMessage());
+        Reporter.log("Timeout during campaign creation: " + e.getMessage(), true);
+        captureScreenshot("campaign-creation-timeout-error");
+        Assert.fail("Campaign creation failed due to timeout: " + e.getMessage());
+// Navigate to Campaigns page and click "New Campaign"
+driver.get(CAMPAIGNS_URL);
+waitForPageToLoad();
+waitForSpinnerToDisappear();
+
+WebElement newCampaignBtn = wait.until(ExpectedConditions.elementToBeClickable(
+    By.xpath("//button[normalize-space()='New Campaign']")));
+scrollToElement(newCampaignBtn);
+newCampaignBtn.click();
+
+waitForPageToLoad();
+waitForSpinnerToDisappear();
+
+// Verify navigation
+String currentUrl = driver.getCurrentUrl();
+if (!currentUrl.equals(CREATE_CAMPAIGN_URL) && !currentUrl.contains("/createcampaign")) {
+    captureScreenshot("campaign-url-mismatch");
+    Assert.fail("Failed to navigate to campaign creation page. Current: " + currentUrl);
+}
+    } catch (NoSuchElementException e) {
+        logger.severe("Element not found during campaign creation: " + e.getMessage());
+        Reporter.log("Element not found during campaign creation: " + e.getMessage(), true);
+        captureScreenshot("campaign-creation-element-not-found");
+        Assert.fail("Campaign creation failed - element not found: " + e.getMessage());
+    } catch (WebDriverException e) {
+        logger.severe("WebDriver error during campaign creation: " + e.getMessage());
+        Reporter.log("WebDriver error during campaign creation: " + e.getMessage(), true);
+        captureScreenshot("campaign-creation-webdriver-error");
+        Assert.fail("Campaign creation failed due to WebDriver error: " + e.getMessage());
+    } catch (Exception e) {
+        logger.severe("Unexpected error during campaign creation: " + e.getMessage());
+        Reporter.log("Unexpected error during campaign creation: " + e.getMessage(), true);
+        captureScreenshot("campaign-creation-unexpected-error");
+        Assert.fail("Campaign creation failed due to unexpected error: " + e.getMessage());
     }
-    
-    /**
-     * Fills in campaign details (company name and employee size)
-     */
-    private void fillCampaignDetails() {
-        WebElement companyNameField = wait.until(ExpectedConditions.visibilityOfElementLocated(
-            By.xpath("//*[@id='root']/div[1]/div/div[2]/div/input")));
-        WebElement employeeSizeButton = wait.until(ExpectedConditions.visibilityOfElementLocated(
-            By.xpath("//*[@id='root']/div[1]/div/div[2]/div/div/div/button[8]")));
-        
-        companyNameField.clear();
-        companyNameField.sendKeys(COMPANY_NAME);
-        employeeSizeButton.click();
-    }
+}
+
+/**
+ * Fills in campaign details (company name and employee size)
+ */
+private void fillCampaignDetails() {
+    WebElement companyNameField = wait.until(ExpectedConditions.visibilityOfElementLocated(
+        By.xpath("//*[@id='root']/div[1]/div/div[2]/div/input")));
+    WebElement employeeSizeButton = wait.until(ExpectedConditions.visibilityOfElementLocated(
+        By.xpath("//*[@id='root']/div[1]/div/div[2]/div/div/div/button[8]")));
+
+    companyNameField.clear();
+    companyNameField.sendKeys(COMPANY_NAME);
+    employeeSizeButton.click();
+}
+
+    // }
 
     @Test
     public void testFileImport() {

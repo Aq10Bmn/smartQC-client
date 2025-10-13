@@ -1,0 +1,99 @@
+Sep 11, 2025 1:58:08 PM Smartqc setupLogger
+INFO: Logger initialized successfully.
+Sep 11, 2025 1:58:08 PM Smartqc setUp
+INFO: Setting up WebDriver...
+Sep 11, 2025 1:58:11 PM Smartqc setUp
+INFO: Setup completed successfully.
+Sep 11, 2025 1:58:11 PM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Sep 11, 2025 1:58:16 PM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Sep 11, 2025 1:58:16 PM Smartqc attemptLogin
+FINE: Clearing and entering username
+Sep 11, 2025 1:58:16 PM Smartqc attemptLogin
+FINE: Clearing and entering password
+Sep 11, 2025 1:58:16 PM Smartqc attemptLogin
+FINE: Clicking login button
+Sep 11, 2025 1:58:16 PM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Sep 11, 2025 1:58:19 PM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Sep 11, 2025 1:58:19 PM Smartqc loginOrSignUp
+INFO: Login successful
+Sep 11, 2025 1:59:00 PM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Sep 11, 2025 1:59:20 PM Smartqc loginOrSignUp
+SEVERE: Timeout during login/signup: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='card-body p-4 p-md-5'] (tried for 20 second(s) with 500 milliseconds interval)
+Sep 11, 2025 1:59:20 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\loginSignupTimeout-20250911-135920.png
+Sep 11, 2025 1:59:41 PM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Sep 11, 2025 2:00:02 PM Smartqc loginOrSignUp
+SEVERE: Timeout during login/signup: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='card-body p-4 p-md-5'] (tried for 20 second(s) with 500 milliseconds interval)
+Sep 11, 2025 2:00:02 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\loginSignupTimeout-20250911-140002.png
+Sep 11, 2025 2:00:23 PM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Sep 11, 2025 2:00:43 PM Smartqc loginOrSignUp
+SEVERE: Timeout during login/signup: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='card-body p-4 p-md-5'] (tried for 20 second(s) with 500 milliseconds interval)
+Sep 11, 2025 2:00:43 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\loginSignupTimeout-20250911-140043.png
+Sep 11, 2025 2:01:03 PM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Sep 11, 2025 2:01:24 PM Smartqc loginOrSignUp
+SEVERE: Timeout during login/signup: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='card-body p-4 p-md-5'] (tried for 20 second(s) with 500 milliseconds interval)
+Sep 11, 2025 2:01:24 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\loginSignupTimeout-20250911-140124.png
+Sep 11, 2025 2:02:14 PM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Sep 11, 2025 2:02:34 PM Smartqc loginOrSignUp
+SEVERE: Timeout during login/signup: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='card-body p-4 p-md-5'] (tried for 20 second(s) with 500 milliseconds interval)
+Sep 11, 2025 2:02:34 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\loginSignupTimeout-20250911-140234.png
+Sep 11, 2025 2:02:55 PM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Sep 11, 2025 2:03:15 PM Smartqc loginOrSignUp
+SEVERE: Timeout during login/signup: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='card-body p-4 p-md-5'] (tried for 20 second(s) with 500 milliseconds interval)
+Sep 11, 2025 2:03:16 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\loginSignupTimeout-20250911-140315.png
+Sep 11, 2025 2:03:36 PM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Sep 11, 2025 2:03:57 PM Smartqc loginOrSignUp
+SEVERE: Timeout during login/signup: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='card-body p-4 p-md-5'] (tried for 20 second(s) with 500 milliseconds interval)
+Sep 11, 2025 2:03:57 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\loginSignupTimeout-20250911-140357.png
+Sep 11, 2025 2:04:17 PM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Sep 11, 2025 2:04:38 PM Smartqc loginOrSignUp
+SEVERE: Timeout during login/signup: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='card-body p-4 p-md-5'] (tried for 20 second(s) with 500 milliseconds interval)
+Sep 11, 2025 2:04:38 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\loginSignupTimeout-20250911-140438.png
+Sep 11, 2025 2:04:58 PM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Sep 11, 2025 2:05:19 PM Smartqc loginOrSignUp
+SEVERE: Timeout during login/signup: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='card-body p-4 p-md-5'] (tried for 20 second(s) with 500 milliseconds interval)
+Sep 11, 2025 2:05:19 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\loginSignupTimeout-20250911-140519.png
+Sep 11, 2025 2:05:39 PM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Sep 11, 2025 2:06:00 PM Smartqc loginOrSignUp
+SEVERE: Timeout during login/signup: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='card-body p-4 p-md-5'] (tried for 20 second(s) with 500 milliseconds interval)
+Sep 11, 2025 2:06:00 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\loginSignupTimeout-20250911-140600.png
+Sep 11, 2025 2:06:00 PM Smartqc testCreateCampaign
+INFO: Testing campaign creation...
+Sep 11, 2025 2:06:02 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\before-campaign-details-20250911-140602.png
+Sep 11, 2025 2:06:23 PM Smartqc testCreateCampaign
+SEVERE: Timeout during campaign creation: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='root']/div[1]/div/div[2]/div/input (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\A-00714\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63255}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63255/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ac9a84c22694df3de372df8c251d2d12
+Sep 11, 2025 2:06:23 PM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\campaign-creation-timeout-error-20250911-140623.png
+Sep 11, 2025 2:06:23 PM Smartqc tearDown
+INFO: Tearing down WebDriver and cleaning up resources...
+Sep 11, 2025 2:06:23 PM Smartqc tearDown
+INFO: WebDriver closed successfully

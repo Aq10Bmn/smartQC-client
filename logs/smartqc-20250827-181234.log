@@ -1,0 +1,10 @@
+Aug 27, 2025 6:12:34 PM Smartqc setupLogger
+INFO: Logger initialized successfully.
+Aug 27, 2025 6:12:34 PM Smartqc setUp
+INFO: Setting up WebDriver...
+Aug 27, 2025 6:12:37 PM Smartqc setUp
+INFO: Setup completed successfully.
+Aug 27, 2025 6:16:41 PM Smartqc tearDown
+INFO: Tearing down WebDriver and cleaning up resources...
+Aug 27, 2025 6:16:41 PM Smartqc tearDown
+INFO: WebDriver closed successfully

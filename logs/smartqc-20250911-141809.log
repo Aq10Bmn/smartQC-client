@@ -1,0 +1,26 @@
+Sep 11, 2025 2:18:09 PM Smartqc setupLogger
+INFO: Logger initialized successfully.
+Sep 11, 2025 2:18:09 PM Smartqc setUp
+INFO: Setting up WebDriver...
+Sep 11, 2025 2:18:11 PM Smartqc setUp
+INFO: Setup completed successfully.
+Sep 11, 2025 2:18:11 PM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Sep 11, 2025 2:18:14 PM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Sep 11, 2025 2:18:14 PM Smartqc attemptLogin
+FINE: Clearing and entering username
+Sep 11, 2025 2:18:14 PM Smartqc attemptLogin
+FINE: Clearing and entering password
+Sep 11, 2025 2:18:14 PM Smartqc attemptLogin
+FINE: Clicking login button
+Sep 11, 2025 2:18:14 PM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Sep 11, 2025 2:18:17 PM Smartqc attemptLogin
+INFO: Successfully logged in and redirected to dashboard
+Sep 11, 2025 2:18:17 PM Smartqc loginOrSignUp
+INFO: Login successful
+Sep 11, 2025 2:18:38 PM Smartqc tearDown
+INFO: Tearing down WebDriver and cleaning up resources...
+Sep 11, 2025 2:18:38 PM Smartqc tearDown
+INFO: WebDriver closed successfully

@@ -1,0 +1,44 @@
+Sep 06, 2025 12:42:33 AM Smartqc setupLogger
+INFO: Logger initialized successfully.
+Sep 06, 2025 12:42:33 AM Smartqc setUp
+INFO: Setting up WebDriver...
+Sep 06, 2025 12:42:35 AM Smartqc setUp
+INFO: Setup completed successfully.
+Sep 06, 2025 12:42:35 AM Smartqc loginOrSignUp
+INFO: Attempting to login or sign up...
+Sep 06, 2025 12:42:41 AM Smartqc attemptLogin
+INFO: Attempting login with email: abamne@smartqc.io
+Sep 06, 2025 12:42:41 AM Smartqc attemptLogin
+FINE: Clearing and entering username
+Sep 06, 2025 12:42:41 AM Smartqc attemptLogin
+FINE: Clearing and entering password
+Sep 06, 2025 12:42:42 AM Smartqc attemptLogin
+FINE: Clicking login button
+Sep 06, 2025 12:42:42 AM Smartqc attemptLogin
+FINE: Waiting for redirect to dashboard
+Sep 06, 2025 12:43:02 AM Smartqc attemptLogin
+WARNING: Login failed due to timeout: Expected condition failed: waiting for url to be "https://smartqc.io/account/dashboard". Current url: "https://smartqc.io/login" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\A-00714\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53486}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53486/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53b8540dee7d88522558cc4e1da28786
+Sep 06, 2025 12:43:23 AM Smartqc loginOrSignUp
+SEVERE: Both login and sign-up failed
+Sep 06, 2025 12:43:23 AM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\loginSignupFailure-20250906-004323.png
+Sep 06, 2025 12:43:23 AM Smartqc testCreateCampaign
+INFO: Testing campaign creation...
+Sep 06, 2025 12:43:44 AM Smartqc testCreateCampaign
+SEVERE: Timeout during campaign creation: Expected condition failed: waiting for element to be clickable: By.xpath: //button[normalize-space()='New Campaign'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\A-00714\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53486}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53486/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53b8540dee7d88522558cc4e1da28786
+Sep 06, 2025 12:43:44 AM Smartqc captureScreenshot
+INFO: Screenshot saved to: C:\Users\A-00714\Desktop\workspace\SmartqcClient\smartQC-client\screenshots\campaign-creation-timeout-error-20250906-004344.png
+Sep 06, 2025 12:43:44 AM Smartqc tearDown
+INFO: Tearing down WebDriver and cleaning up resources...
+Sep 06, 2025 12:43:45 AM Smartqc tearDown
+INFO: WebDriver closed successfully
